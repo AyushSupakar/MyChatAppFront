@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-// import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 import { Button } from "../ui/button";
-// import LoginModal from "../auth/LoginModal";
+import LogInModal from "../auth/LoginModal";
+import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 export default function Navbar({ 
-    // user
+    user
  }: { 
-    // user: CustomUser | null
+    user?: CustomUser | null
  }) {
   return (
     <nav className="p-6 flex justify-between items-center bg-white shadow-sm">
@@ -15,13 +15,13 @@ export default function Navbar({
       <div className="flex items-center space-x-2 md:space-x-6 text-gray-700">
         <Link href="/">Home</Link>
         <Link href="#features">Features</Link>
-        {/* {!user ? (
-          <LoginModal />
+        {!user ? (
+          <LogInModal />
         ) : (
           <Link href="/dashboard">
             <Button>Dashboard</Button>
           </Link>
-        )} */}
+        )}
       </div>
     </nav>
   );
