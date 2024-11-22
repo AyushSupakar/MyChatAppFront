@@ -9,7 +9,20 @@ import {
   } from "@/components/ui/dialog"
 import { Button } from '../ui/button'
 import Image from 'next/image'
+import { signIn } from 'next-auth/react'
+
+
 function LogInModal() {
+
+  const handleLogin = () =>{
+
+    signIn("google",{
+      callbackUrl:"/dashboard",
+      redirect:true
+    })
+
+  }
+
   return (
     <div>
       <Dialog>
@@ -26,18 +39,16 @@ function LogInModal() {
         Make secure conversations with anyone with MyChatt App! 
       </DialogDescription>
     </DialogHeader>
-    <Button variant={'outline'}>
+    <Button variant={'outline'} onClick={handleLogin}>
 
       <Image 
       src="/images/gooogle.png"
       className='mr-4'
-      width={25}
-      height={25}
+      width={20}
+      height={20}
       alt="google logo"
-      >
+      />
         Continue with Google
-      </Image>
-
     </Button>
   </DialogContent>
 </Dialog>

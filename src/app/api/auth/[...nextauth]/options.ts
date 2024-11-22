@@ -1,6 +1,9 @@
-import { AuthOptions, ISODateString } from "next-auth";
+import { Account, AuthOptions, ISODateString } from "next-auth";
 import { JWT } from "next-auth/jwt";
+import Email from "next-auth/providers/email";
 import GoogleProvider from "next-auth/providers/google";
+import axios from "axios";
+import { LOGIN_URL } from "@/lib/apiEndPoints";
 
 export interface CustomSession{
     user?:CustomUser;
@@ -22,10 +25,32 @@ export const authOption:AuthOptions={
         signIn:"/"
     },
     callbacks: {
-        async signIn({ user, account }) {
+        async signIn({ user, account }:{user:CustomUser, account:Account|null}) {
+          
+          try {
             console.log("The user is = "+user);
             console.log("The user is = "+account);
+
+            const payload={
+              email:user.email,
+              name:user.name,
+              image:user?.image,
+              oauth_id:account?.providerAccountId,
+              provider:account?.provider,
+
+            }
+
+              const {data} = await axios.post(LOGIN_URL, payload);
+              user.id = data?.user?.id.toString();
+              user.token = data?.user?.token.toString();
+              user.provider = data?.user?.toString();
             return true;
+          } catch (error) {
+            return false;
+          }
+          
+          
+          
           },
 
         async session({ session, user, token }:{session:CustomSession, user:CustomUser, token:JWT}) {

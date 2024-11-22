@@ -12,11 +12,7 @@ export default function UserReviews() {
             “QuickChat is a game-changer! The fastest way to start a chat.”
           </p>
           <div className="mt-4">
-            <img
-              src="/images/user1.png"
-              alt="User 1"
-              className="w-12 h-12 rounded-full mx-auto"
-            />
+            <img src="/images/user1.png" alt="User 1" className="w-12 h-12 rounded-full mx-auto"/>
             <div className="mt-2 text-gray-800">John Doe, Developer</div>
           </div>
         </Card>
@@ -25,11 +21,7 @@ export default function UserReviews() {
             “The encryption is top-notch. I feel secure using QuickChat.”
           </p>
           <div className="mt-4">
-            <img
-              src="/images/user2.png"
-              alt="User 2"
-              className="w-12 h-12 rounded-full mx-auto"
-            />
+            <img src="/images/user2.png" alt="User 2" className="w-12 h-12 rounded-full mx-auto"/>
             <div className="mt-2 text-gray-800">Jane Smith, Designer</div>
           </div>
         </Card>

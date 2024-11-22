@@ -20,11 +20,7 @@ export default function HeroSection() {
 
       <div className="mt-12 w-full max-w-5xl flex justify-center">
         {/* Placeholder for Illustration/Image */}
-        <img
-          src="/images/conversation.svg"
-          alt="Illustration"
-          className="w-full h-auto"
-        />
+        <img src="/images/conversation1.svg" alt="Illustration" className="w-full h-auto"/>
       </div>
     </section>
   );
