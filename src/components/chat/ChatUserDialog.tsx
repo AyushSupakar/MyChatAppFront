@@ -13,12 +13,15 @@ import { useParams } from "next/navigation";
 import axios from "axios";
 import { CHAT_GROUP_USERS_URL } from "@/lib/apiEndPoints";
 import { toast } from "sonner";
+import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 
 export default function ChatUserDialog({
+  name,
   open,
   setOpen,
   group,
 }: {
+  name:string,
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
   group: ChatGroupType;
@@ -37,6 +40,7 @@ export default function ChatUserDialog({
         setOpen(false);
       }
     }
+    setState({...state, name:name.split(" ")[0]})
   }, []);
 
   const handleSubmit = async (event: React.FormEvent) => {
@@ -67,19 +71,12 @@ export default function ChatUserDialog({
     <Dialog open={open}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Add Name and Passcode</DialogTitle>
+          <DialogTitle>Enter the Passcode</DialogTitle>
           <DialogDescription>
-            Add your name and passcode to join in room
+            {`Hi ${name.split(" ")[0]}, Please provide the pas code to enter the chat room.`}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit}>
-          <div className="mt-2">
-            <Input
-              placeholder="Enter your name"
-              value={state.name}
-              onChange={(e) => setState({ ...state, name: e.target.value })}
-            />
-          </div>
           <div className="mt-2">
             <Input
               placeholder="Enter your passcode"

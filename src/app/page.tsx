@@ -16,7 +16,7 @@ export default async function LandingPage() {
       {/* Header */}
       <Navbar user={session?.user}/>
       {/* Hero Section */}
-      <HeroSection />
+      <HeroSection user={session?.user} />
 
       {/* Features Section */}
       <FeatureSection />

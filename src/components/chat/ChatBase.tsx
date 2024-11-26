@@ -7,8 +7,9 @@ import ChatSidebar from './ChatSidebar'
 import ChatNav from './ChatNav'
 import ChatUserDialog from './ChatUserDialog'
 import Chats from './Chats'
+import { CustomUser } from '@/app/api/auth/[...nextauth]/options'
 
-export default function ChatBase({group, users, oldMessages}:{group:ChatGroupType ; users: Array<GroupChatUserType>|[]; oldMessages: Array<MessageType> | []}) {
+export default function ChatBase({name, group, users, oldMessages}:{name:string, group:ChatGroupType ; users: Array<GroupChatUserType>|[]; oldMessages: Array<MessageType> | []}) {
   
 
 
@@ -29,7 +30,7 @@ export default function ChatBase({group, users, oldMessages}:{group:ChatGroupTyp
 
       <div className="w-full md:w-4/5 bg-gradient-to-b from-gray-50 to-white">
 
-      {open? <ChatUserDialog open={open} setOpen={setOpen} group={group}/> : <ChatNav chatGroup={group} users={users}/>}
+      {open? <ChatUserDialog name={name!} open={open} setOpen={setOpen} group={group}/> : <ChatNav chatGroup={group} users={users}/>}
       
       <Chats group={group} chatUser={chatUser} oldMessages={oldMessages}/>
 

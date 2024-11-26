@@ -28,21 +28,21 @@ function LogInModal() {
       <Dialog>
   <DialogTrigger asChild>
     <Button>
-      Getting Started
+      Login to Chat
     </Button>
 
   </DialogTrigger>
   <DialogContent>
     <DialogHeader>
-      <DialogTitle className='text-2xl'>Welcome to MyChat App</DialogTitle>
-      <DialogDescription>
-        Make secure conversations with anyone with MyChatt App! 
+      <DialogTitle className='flex justify-center '> <div className='text-2xl'>Welcome to MyChat App</div> </DialogTitle>
+      <DialogDescription className='flex justify-center'>
+        Make secure conversations with anyone with MyChatt App!
       </DialogDescription>
     </DialogHeader>
     <Button variant={'outline'} onClick={handleLogin}>
 
-      <Image 
-      src="/images/gooogle.png"
+      <img 
+      src="/images/google.svg"
       className='mr-4'
       width={20}
       height={20}

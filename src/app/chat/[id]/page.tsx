@@ -1,12 +1,14 @@
+import { authOption, CustomSession } from '@/app/api/auth/[...nextauth]/options';
 import ChatBase from '@/components/chat/ChatBase'
 import { chatsFetch } from '@/fetch/chatsFetch';
 import { fetchChatUsers, fetchOneChatGroup } from '@/fetch/groupFetch';
+import { getServerSession } from 'next-auth';
 import { notFound } from 'next/navigation';
 import React from 'react'
 
 export default async function chat({params}:{params:{id:string}}) {
     const {id} = await params;
-  
+    const session:CustomSession|null= await getServerSession(authOption);
     if(params.id.length!= 36){
       return notFound();
     }
@@ -25,7 +27,7 @@ export default async function chat({params}:{params:{id:string}}) {
     return (
     
     <div>
-        <ChatBase users={users} group={group} oldMessages={chats}/>
+        <ChatBase name={session?.user?.name!} users={users} group={group} oldMessages={chats}/>
     </div>
   )
 }

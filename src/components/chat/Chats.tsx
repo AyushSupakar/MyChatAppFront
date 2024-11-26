@@ -1,6 +1,7 @@
 import React, {useEffect, useMemo, useRef, useState } from "react";
 import { getSocket } from "@/lib/socket.config";
 import { v4 as uuidv4 } from "uuid";
+import { Button } from "../ui/button";
 export default function Chats({
   group,
   oldMessages,
@@ -70,14 +71,17 @@ export default function Chats({
           ))}
         </div>
       </div>
-      <form onSubmit={handleSubmit} className="mt-2 flex items-center">
+      <form onSubmit={handleSubmit} className="mt-2 text-xl flex items-center mb-8">
         <input
           type="text"
           placeholder="Type a message..."
           value={message}
-          className="flex-1 p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-1 p-4 border-8 text-xl rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
           onChange={(e) => setMessage(e.target.value)}
         />
+        <button type="submit" className=" mx-2 px-4">
+          <img src="/images/send2.svg" alt="" height={50} width={50} />
+        </button>
       </form>
     </div>
   );

@@ -10,8 +10,9 @@ import {
   } from "@/components/ui/dropdown-menu"
 import UserAvatar from '../common/UserAvatar'
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 const LogoutModal = dynamic(()=>import("../auth/LogoutModal"))
-export default function ProfileMenu({name, image}:{name:string, image?:string}) {
+export default function ProfileMenu({name, image, email}:{name:string, image?:string, email?:string}) {
     
     const[logoutOpen, setLogoutOpen] = useState(false);
 
@@ -27,7 +28,9 @@ export default function ProfileMenu({name, image}:{name:string, image?:string}) 
   <DropdownMenuContent>
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
-    <DropdownMenuItem>Profile</DropdownMenuItem>
+    <DropdownMenuItem>
+      <Link href="/profile">Profile</Link>
+    </DropdownMenuItem>
     <DropdownMenuItem onClick={()=>setLogoutOpen(true)}>Logout</DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>

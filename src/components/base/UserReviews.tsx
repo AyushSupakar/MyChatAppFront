@@ -9,7 +9,7 @@ export default function UserReviews() {
       <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
         <Card className="p-6 text-center">
           <p className="text-lg text-gray-700">
-            “QuickChat is a game-changer! The fastest way to start a chat.”
+            “MyChatApp is a game-changer! The fastest way to start a chat.”
           </p>
           <div className="mt-4">
             <img src="/images/user1.png" alt="User 1" className="w-12 h-12 rounded-full mx-auto"/>
@@ -18,7 +18,7 @@ export default function UserReviews() {
         </Card>
         <Card className="p-6 text-center">
           <p className="text-lg text-gray-700">
-            “The encryption is top-notch. I feel secure using QuickChat.”
+            “The encryption is top-notch. I feel secure using MyChatApp.”
           </p>
           <div className="mt-4">
             <img src="/images/user2.png" alt="User 2" className="w-12 h-12 rounded-full mx-auto"/>
