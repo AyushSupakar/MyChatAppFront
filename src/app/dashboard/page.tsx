@@ -13,7 +13,7 @@ import Link from 'next/link';
 export default async function dashboard() {
     const session:CustomSession|null= await getServerSession(authOption);
     const groups:Array<ChatGroupType>|[] = await fetchChatGroup(session?.user?.token!);
-    console.log("The groups are :",groups);
+    // console.log("The groups are :",groups);
   return (
     <div className='p-8'>
       {/* <p>{JSON.stringify(session)}</p> */}
