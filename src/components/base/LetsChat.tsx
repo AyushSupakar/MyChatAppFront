@@ -4,9 +4,8 @@ import React from 'react'
 import LogInModal from '../auth/LoginModal'
 import Link from 'next/link'
 import { Button } from '../ui/button'
-import ProfileMenu from '../auth/ProfileMenu'
 
-export default function LoginButton({ 
+export default function LetsChat({ 
     user
  }: { 
     user?: CustomUser | null
@@ -16,11 +15,9 @@ export default function LoginButton({
       {!user ? (
           <LogInModal />
         ) : (
-          // <Link href="/dashboard">
-          //   <Button>Let's Chat!</Button>
-          // </Link>
-
-          <ProfileMenu name={user?.name!} image={user?.image!} email={user?.email!} />
+          <Link href="/dashboard">
+            <Button>Let's Chat!</Button>
+          </Link>
         )}
     </div>
   )

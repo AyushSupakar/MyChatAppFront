@@ -7,9 +7,11 @@ import { getServerSession } from 'next-auth';
 import { notFound } from 'next/navigation';
 import React, { useState } from 'react'
 
-export default async function chat({params}:{params:{id:string}}) {
-    const {id} = await params;
+type tParams = Promise<{id :string}> 
+
+export default async function chat({ params }: { params: any }) {
     const session:CustomSession|null= await getServerSession(authOption);
+    const { id } = await params;
     if(params.id.length!= 36){
       return notFound();
     }

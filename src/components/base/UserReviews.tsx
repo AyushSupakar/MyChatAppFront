@@ -7,7 +7,7 @@ export default function UserReviews() {
         What Our Users Say
       </h2>
       <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
-        <Card className="p-6 text-center">
+        <Card className="p-6 text-center shdw">
           <p className="text-lg text-gray-700">
             “MyChatApp is a game-changer! The fastest way to start a chat.”
           </p>
@@ -16,7 +16,7 @@ export default function UserReviews() {
             <div className="mt-2 text-gray-800">John Doe, Developer</div>
           </div>
         </Card>
-        <Card className="p-6 text-center">
+        <Card className="p-6 text-center shdw">
           <p className="text-lg text-gray-700">
             “The encryption is top-notch. I feel secure using MyChatApp.”
           </p>

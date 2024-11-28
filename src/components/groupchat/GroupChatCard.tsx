@@ -13,7 +13,7 @@ export default function GroupChatCard({
   user: CustomUser;
 }) {
   return (
-    <Card>
+    <Card className="shdw shdw:hover">
       <Link href={`${Env.APP_URL}/chat/${group.id}`}>
       <CardHeader className="flex-row justify-between items-center ">
         <CardTitle className="text-2xl">{group.title}</CardTitle>
