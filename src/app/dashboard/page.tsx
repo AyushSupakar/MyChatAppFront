@@ -41,9 +41,9 @@ export default async function dashboard() {
               <GroupChatCard group={item} key={index} user={session?.user!} />
             ))):(<div className="flex-col text-center p-2">
 
-              <h1 className=" text-2xl font-bold font-sans p-2">Welcome to MyChatApp, Please create a Group and share the Link with friends to chat with them. </h1>
+              <h1 className=" smallhead2  text-2xl font-bold font-sans p-2">Welcome to MyChatApp, Please create a Group and share the Link with friends to chat with them. </h1>
 
-              <div className="flex justify-center"><div className="w-1/2">
+              <div className="flex justify-center"><div className="w-1/2 py-2 smallfull">
                 
               <img src="/MyChatAppW.png" alt="Illustration" className=""/>
             </div></div>

@@ -133,5 +133,11 @@ body:active {
   .smallMargin{
     @apply m-2
   }
+  .smallhead2{
+    @apply text-xl text-gray-500
+  }
+  .smallfull{
+    @apply w-full
+  }
 
 }
