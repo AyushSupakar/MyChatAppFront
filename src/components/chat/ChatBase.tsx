@@ -27,7 +27,7 @@ export default function ChatBase({name, group, users, oldMessages}:{name:string,
     },[group.id, oldMessages])
 
     return (
-    <div className='flex p-4'>
+    <div className='flex p-4 smallPadding'>
       <ChatSidebar users={users}/>
 
       <div className="w-full md:w-4/5 bg-gradient-to-b from-gray-50 to-white">

@@ -14,14 +14,14 @@ export default function MobileChatSidebar({
 }: {
   users: Array<GroupChatUserType> | [];
 }) {
-  return (
+  return ( 
     <Sheet>
       <SheetTrigger asChild>
         <HamburgerMenuIcon />
       </SheetTrigger>
       <SheetContent side="left" className="bg-muted">
         <SheetHeader>
-          <SheetTitle className="text-2xl font-bold">Users</SheetTitle>
+          <SheetTitle className="text-2xl font-sans  px-4 font-extrabold py-4 ">Group Members</SheetTitle>
         </SheetHeader>
         <div>
           {users.length > 0 &&

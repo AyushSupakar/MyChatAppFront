@@ -134,10 +134,34 @@ body:active {
     @apply m-2
   }
   .smallhead2{
-    @apply text-xl text-gray-500
+    @apply text-lg text-gray-500
   }
   .smallfull{
     @apply w-full
+  }
+  .smallchatH{
+    @apply h-[78vh]
+  }
+  .smallchat{
+    @apply text-base
+  }
+  .verysmallpad{
+    @apply p-1 px-2
+  }
+  .smallborder{
+    @apply border-2
+  }
+  .verysmallmargin{
+    @apply m-1
+  }
+  .toghid{
+    @apply flex
+  }
+  .rtoghid{
+    @apply hidden
+  }
+  .bigbutt{
+    @apply w-12 h-8
   }
 
 }

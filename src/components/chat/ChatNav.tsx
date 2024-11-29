@@ -16,22 +16,28 @@ export default function ChatNav({
   return (
     <nav className="w-full  justify-between items-center smallPadding  px-6 py-2 border-b">
       <div className=" items-center">
-        <div className="w-20 md:hidden m-2 p-1">
+        <div className="w-20 md:hidden m-2 p-2">
                       <MobileChatSidebar users={users} />
 
                     
 
                     </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
             
-            <div className="flex">
+            <div className="flex rtoghid">
           <h1 className="text-4xl smallHeading font-bold bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text">
           {chatGroup.title}
         </h1>
         </div>
 
+        <div className="hidden toghid">
+          <h1 className="text-4xl smallHeading font-bold bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text">
+          {chatGroup.title.substring(0,11).concat("...")}
+        </h1>
+        </div>
 
-          <div className=" px-4">
+
+          <div className=" px-4 smallPadding">
             <Link href="/dashboard">
             <Button className="text-md font-bold">
             

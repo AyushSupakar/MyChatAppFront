@@ -12,22 +12,22 @@ type tParams = Promise<{id :string}>
 export default async function chat({ params }: { params: any }) {
     const session:CustomSession|null= await getServerSession(authOption);
     const { id } = await params;
-    if(params.id.length!= 36){
+    if(id.length!= 36){
       return notFound();
     }
   
     // console.log("The group id is", id)
-  const group:ChatGroupType | null = await fetchOneChatGroup(params.id)
+  const group:ChatGroupType | null = await fetchOneChatGroup(id)
 
   if(group==null){
     return notFound();
   }
 
- const users:Array<GroupChatUserType> | [] = await fetchChatUsers(params.id);
+ const users:Array<GroupChatUserType> | [] = await fetchChatUsers(id);
 
  
 
-  const chats: Array<MessageType> | [] = await chatsFetch(params.id);
+  const chats: Array<MessageType> | [] = await chatsFetch(id);
 
     return (
     
