@@ -13,7 +13,7 @@ export default function LetsChat({
   return (
     <div className='mt-2'>
       {!user ? (
-          <LogInModal />
+          <LogInModal word={"Login to Chat"} />
         ) : (
           <Link href="/dashboard">
             <Button>Let's Chat!</Button>

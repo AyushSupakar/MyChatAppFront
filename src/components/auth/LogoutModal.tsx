@@ -24,7 +24,7 @@ function LogoutModal({open, setOpen}:{open:boolean, setOpen:Dispatch<SetStateAct
   return (
     <div>
       <AlertDialog open={open} onOpenChange={setOpen}>
-  <AlertDialogTrigger>Open</AlertDialogTrigger>
+  <AlertDialogTrigger></AlertDialogTrigger>
   <AlertDialogContent>
     <AlertDialogHeader>
       <AlertDialogTitle>Are you sure?</AlertDialogTitle>

@@ -14,11 +14,8 @@ export default function LoginButton({
   return (
     <div className='m-2'>
       {!user ? (
-          <LogInModal />
+          <LogInModal word={"Login"} />
         ) : (
-          // <Link href="/dashboard">
-          //   <Button>Let's Chat!</Button>
-          // </Link>
 
           <ProfileMenu name={user?.name!} image={user?.image!} email={user?.email!} />
         )}

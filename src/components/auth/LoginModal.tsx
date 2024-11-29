@@ -12,7 +12,7 @@ import Image from 'next/image'
 import { signIn } from 'next-auth/react'
 
 
-function LogInModal() {
+function LogInModal({word}:{word:string}) {
 
   const handleLogin = () =>{
 
@@ -28,7 +28,7 @@ function LogInModal() {
       <Dialog>
   <DialogTrigger asChild>
     <Button>
-      Login to Chat
+      {word}
     </Button>
 
   </DialogTrigger>

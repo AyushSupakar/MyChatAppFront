@@ -110,3 +110,28 @@ body:active {
   transform: scale(0.92); 
 	transition: 0.3s all;
 }
+
+@media screen and (max-width: 640px) and (min-width:321px){
+  .smallHeading{
+    @apply text-3xl;
+  }
+  .hiddenOnSmall{
+    @apply hidden;
+  }
+  .imageAdjustOnSmall{
+    @apply ml-8
+  }
+  .smallimage{
+    @apply w-full
+  }
+  .smallLogo{
+    @apply size-10
+  }
+  .smallPadding{
+    @apply p-2
+  }
+  .smallMargin{
+    @apply m-2
+  }
+
+}

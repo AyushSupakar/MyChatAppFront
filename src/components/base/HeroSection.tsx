@@ -18,9 +18,11 @@ export default function HeroSection({
       </h1>
 
       <LetsChat user={user}/>
-      <div className="mt-2 w-full max-w-5xl flex justify-center">
+      <div className=" mt-2 w-full max-w-5xl flex justify-center">
         {/* Placeholder for Illustration/Image */}
-        <div className=" w-full h-auto"><img src="/images/conversation1.svg" alt="Illustration" className="ml-24 w-3/4"/>
+        <div className=" w-3/4 smallimage content-center h-auto">
+          
+          <img src="/images/conversation1.svg" alt="Illustration" className="  w-full"/>
       </div></div>
         
       
