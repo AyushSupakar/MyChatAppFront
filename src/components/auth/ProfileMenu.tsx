@@ -17,7 +17,7 @@ export default function ProfileMenu({name, image, email}:{name:string, image?:st
     const[logoutOpen, setLogoutOpen] = useState(false);
 
   return (
-    <div>
+    <div className='mt-4 size-16'>
         {logoutOpen && <Suspense fallback={<p>Loading...</p>}>
         <LogoutModal open={logoutOpen} setOpen={setLogoutOpen} />
         </Suspense>}

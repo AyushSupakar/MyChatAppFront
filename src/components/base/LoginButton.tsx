@@ -12,7 +12,7 @@ export default function LoginButton({
     user?: CustomUser | null
  }) {
   return (
-    <div className='mt-2'>
+    <div className='m-2'>
       {!user ? (
           <LogInModal />
         ) : (

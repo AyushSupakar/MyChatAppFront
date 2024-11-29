@@ -21,10 +21,19 @@ export default function Navbar({
         />
       <h1 className="text-4xl md:text-4xl font-extrabold">MyChatApp</h1></div>
      
-      <div className="flex items-center space-x-2 md:space-x-6 text-gray-700">
-        <Link href="/">Home</Link>
-        <Link href="#features">Features</Link>
+      <div className="flex items-center justify-center space-x-2 md:space-x-6 text-gray-700">
+        <div className="flex">
+        <Link className="font-bold text-lg" href="/">Home</Link>
+        </div>
+
+        <div className="flex">
+          <Link className="font-bold text-lg" href="#features">Features</Link>
+          </div>
+
         <LoginButton user={user}/>
+        
+        
+        
       </div>
     </nav>
   );

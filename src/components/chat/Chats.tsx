@@ -104,7 +104,7 @@ const updateU =()=>{
   };
 
   return (
-    <div className="flex flex-col h-[94vh]  p-4">
+    <div className="flex flex-col h-[85vh]  p-4">
       <div className="flex-1 overflow-y-auto flex flex-col-reverse">
         <div ref={messagesEndRef} />
         <div className="flex flex-col gap-2 text-lg">

@@ -60,7 +60,9 @@ export default function CreateChat({user}:{user:CustomUser}) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
   <DialogTrigger asChild>
-    <Button>Create Group</Button>
+    <Button className='shdw' >
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" enableBackground="new 0 0 32 32" xmlSpace="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <polygon points="22,16.8 22,26 6,26 6,10 15.2,10 17.2,8 4,8 4,28 24,28 24,14.8 "></polygon> <path fill="none" stroke="#ffffff" strokeWidth="2" strokeMiterlimit="10" d="M16.5,18.3L13,19l0.7-3.5l9.9-9.9 c0.8-0.8,2-0.8,2.8,0l0,0c0.8,0.8,0.8,2,0,2.8L16.5,18.3z"></path> </g></svg>
+      Create Group</Button>
   </DialogTrigger>
   <DialogContent onInteractOutside={(e)=>e.preventDefault()}>
     <DialogHeader>

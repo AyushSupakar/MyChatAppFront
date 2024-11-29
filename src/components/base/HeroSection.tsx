@@ -12,7 +12,7 @@ export default function HeroSection({
   user?: CustomUser | null
 }) {
   return (
-    <section className="flex-1 flex flex-col items-center justify-center text-center px-4 py-2 bg-gradient-to-b from-gray-50 to-white">
+    <section className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-2 bg-gradient-to-b from-gray-50 to-white">
       <h1 className="text-3xl font-extrabold text-gray-900 mb-4">
         Create A Group and Share The Link to Chat with Friends!
       </h1>
@@ -20,7 +20,7 @@ export default function HeroSection({
       <LetsChat user={user}/>
       <div className="mt-2 w-full max-w-5xl flex justify-center">
         {/* Placeholder for Illustration/Image */}
-        <div className=" w-full h-auto"><img src="/images/conversation1.svg" alt="Illustration" className="ml-16 w-4/5"/>
+        <div className=" w-full h-auto"><img src="/images/conversation1.svg" alt="Illustration" className="ml-24 w-3/4"/>
       </div></div>
         
       
