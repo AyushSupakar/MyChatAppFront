@@ -14,7 +14,7 @@ export default function GroupChatCard({
 }) {
   return (
     <Card className="shdw shdw:hover">
-      <Link href={`${Env.APP_URL}/chat/${group.id}`}>
+      <Link href={`${process.env.NEXT_PUBLIC_APP_URL}/chat/${group.id}`}>
       <CardHeader className="flex-row justify-between items-center ">
         <CardTitle className="text-2xl">{group.title}</CardTitle>
         <GroupChatCardMenu user={user} group={group} />
