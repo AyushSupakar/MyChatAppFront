@@ -160,7 +160,7 @@ body:active {
   .rtoghid{
     @apply hidden
   }
-  .bigbutt{
+  .smallbutt{
     @apply w-12 h-8
   }
 
