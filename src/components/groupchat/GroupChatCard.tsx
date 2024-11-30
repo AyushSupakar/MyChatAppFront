@@ -25,7 +25,7 @@ export default function GroupChatCard({
     <Card className="Nshdw">
       
       <CardHeader className="flex-row justify-between items-center ">
-        <CardTitle className="text-2xl">{(group.title.length<=20)?(group.title):(group.title.substring(0,20).concat("..."))}</CardTitle>
+        <CardTitle className="text-2xl">{(group.title.length<=17)?(group.title):(group.title.substring(0,16).concat("..."))}</CardTitle>
         <GroupChatCardMenu user={user} group={group} />
       </CardHeader>
       <CardContent>

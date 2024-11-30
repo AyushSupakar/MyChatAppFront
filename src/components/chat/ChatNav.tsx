@@ -32,7 +32,7 @@ export default function ChatNav({
 
         <div className="hidden toghid">
           <h1 className="text-4xl smallHeading font-bold bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text">
-          {(chatGroup.title.length<11)?(chatGroup.title):(chatGroup.title.substring(0,11).concat("..."))}
+          {(chatGroup.title.length<10)?(chatGroup.title):(chatGroup.title.substring(0,10).concat("..."))}
         </h1>
         </div>
 
