@@ -12,7 +12,7 @@ export default function LoginButton({
     user?: CustomUser | null
  }) {
   return (
-    <div className='m-2'>
+    <div className='m-2 hiddenOnSmall'>
       {!user ? (
           <LogInModal word={"Login"} />
         ) : (

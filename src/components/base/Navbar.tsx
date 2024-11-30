@@ -11,7 +11,7 @@ export default function Navbar({
     user?: CustomUser | null
  }) {
   return (
-    <nav className="px-4 py-2 flex justify-between items-center bg-white shadow-sm ">
+    <nav className="px-4 py-2 flex sc justify-between items-center bg-white shadow-sm ">
 
       <div className="flex gap-6 items-center "> <img
       className="w-72"

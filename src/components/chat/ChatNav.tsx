@@ -14,7 +14,7 @@ export default function ChatNav({
   user?: GroupChatUserType;
 }) {
   return (
-    <nav className="w-full  justify-between items-center smallPadding  px-6 py-2 border-b">
+    <nav className="w-full justify-between items-center smallPadding  px-6 py-2 border-b">
       <div className=" items-center">
         <div className="w-20 md:hidden m-2 p-2">
                       <MobileChatSidebar users={users} />

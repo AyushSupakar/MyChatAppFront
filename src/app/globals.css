@@ -163,5 +163,11 @@ body:active {
   .smallbutt{
     @apply w-12 h-8
   }
+  .sc{
+    @apply justify-center
+  }
+  .sh2{
+    @apply text-xl
+  }
 
 }

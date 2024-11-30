@@ -13,7 +13,7 @@ export default function HeroSection({
 }) {
   return (
     <section className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-2 bg-gradient-to-b from-gray-50 to-white">
-      <h1 className="text-3xl font-extrabold text-gray-900 mb-4">
+      <h1 className="text-3xl sh2 font-extrabold text-gray-800 mb-4">
         Create A Group and Share The Link to Chat with Friends!
       </h1>
 
