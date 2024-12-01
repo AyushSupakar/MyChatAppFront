@@ -111,7 +111,7 @@ body:active {
 	transition: 0.3s all;
 }
 
-@media screen and (max-width: 640px) and (min-width:321px){
+@media screen and (max-width: 640px) {
   .smallHeading{
     @apply text-2xl;
   }
