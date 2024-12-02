@@ -20,7 +20,7 @@ export default async function dashboard() {
       {/* <p>{JSON.stringify(session)}</p> */}
       <DashNav name={session?.user?.name!} image ={session?.user?.image?? undefined} email={session?.user?.name!}/>
 
-      <div className="flex justify-between p-4 mx-8 smallMargin">
+      <div className="flex justify-between p-4 mx-6 smallMargin">
           <div className="flex justify-start mt-8 smallMargin">
           <CreateChat user={session?.user!}/>
         </div>

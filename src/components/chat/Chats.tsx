@@ -105,8 +105,8 @@ const updateU =()=>{
 
   return (
     <div className="flex flex-col h-[80vh] smallchatH verysmallpad px-4">
-      <div className="flex-1 overflow-y-auto flex flex-col-reverse">
-        <div ref={messagesEndRef} />
+      <div ref={messagesEndRef} className="flex-1 overflow-y-auto flex flex-col-reverse">
+        <div  />
         <div className="flex flex-col gap-2 text-lg">
           {messages.map((message) => (
             <div

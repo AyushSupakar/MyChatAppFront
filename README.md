@@ -1,5 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
+<a id="readme-top">MYCHAT APP</a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -34,15 +34,15 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80"/>
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">MYCHAT APP</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome App to have private group chats with friends!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://mychatapp-eight.vercel.app/dashboard">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
